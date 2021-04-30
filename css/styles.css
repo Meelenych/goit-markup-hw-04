@@ -158,6 +158,7 @@ img {
 .client-svg,
 .client-svg-tile {
   fill: currentColor;
+  color: currentColor;
 }
 
 .header .container {
@@ -278,6 +279,12 @@ img {
 
 /*Команда*/
 
+.team {
+  background-color: var(--btn-bg);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -289,28 +296,29 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
   margin-top: 30px;
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-card-text {
-  padding: 30px;
-  word-wrap: normal;
+
+.team-photo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.team {
-  background-color: var(--btn-bg);
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-card-text {
+  padding-top: 30px;
+  word-wrap: normal;
+  margin-bottom: 16px;
 }
+
 .team-names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-cl);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .team-position {
@@ -320,9 +328,21 @@ img {
   text-align: center;
 }
 
-.team-photo {
-  margin-left: auto;
-  margin-right: auto;
+.team-contacts {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+.team-social {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.team-social:hover,
+.team-social:focus {
+  fill: var(--alt-text-cl);
 }
 
 /*Клиенты*/
@@ -330,6 +350,7 @@ img {
 .section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  color: #afb1b8;
 }
 
 .clients {
@@ -349,11 +370,11 @@ img {
 .client-svg {
   width: 106px;
   height: 60px;
+  fill: currentColor;
 }
 
 .client-svg-tile {
   border: 1px solid currentColor;
-  box-sizing: border-box;
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -370,6 +391,13 @@ img {
   padding-top: 60px;
 }
 
+.foter-content {
+  display: flex;
+}
+
+.address-block {
+  margin-right: 70px;
+}
 .address-white {
   color: var(--alt-text-cl);
   margin-top: 20px;
@@ -383,15 +411,11 @@ img {
   margin-top: 9px;
 }
 
-.address-block {
-  float: left;
-  margin-right: 156px;
-}
-
 /*Соцсети*/
 .contact-links {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .connect {
@@ -399,28 +423,35 @@ img {
   font-weight: 700;
   line-height: 1.14;
   color: var(--alt-text-cl);
-}
-
-.studio-links-list {
+  margin-bottom: 20px;
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  position: absolute;
-  margin-top: 50px;
 }
 
-.studio-link-line {
-  flex-basis: calc(100% / 4 - 40px);
-  margin-right: 10px;
+.links-list {
+  display: inline-flex;
 }
 
-.button-icon {
+.studio-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  fill: var(--alt-text-cl);
   border-radius: 50%;
-  background-color: currentColor;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
+.studio-link:hover,
+.studio-link:focus {
+  background-color: var(--accent-cl);
+}
+
+.studio-social {
+  fill: var(--alt-text-cl);
+  width: 20px;
+  height: 20px;
+}
+
 /*Portfolio*/
 .section-portfolio {
   padding-top: 94px;
@@ -466,6 +497,12 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .label {
