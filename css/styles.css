@@ -340,9 +340,23 @@ img {
   height: 20px;
 }
 
+.team-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.team-link:hover,
 .team-social:hover,
+.team-link:focus,
 .team-social:focus {
   fill: var(--alt-text-cl);
+  background-color: var(--accent-cl);
 }
 
 /*Клиенты*/
@@ -425,6 +439,7 @@ img {
   color: var(--alt-text-cl);
   margin-bottom: 20px;
   display: flex;
+  margin-top: 12px;
 }
 
 .links-list {
