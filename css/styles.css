@@ -352,11 +352,13 @@ img {
 }
 
 .team-link:hover,
-.team-social:hover,
-.team-link:focus,
-.team-social:focus {
-  fill: var(--alt-text-cl);
+.team-link:focus {
   background-color: var(--accent-cl);
+}
+
+.team-link:hover .team-social,
+.team-link:focus .team-social {
+  fill: var(--alt-text-cl);
 }
 
 /*Клиенты*/
