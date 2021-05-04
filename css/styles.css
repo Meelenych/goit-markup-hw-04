@@ -132,8 +132,6 @@ img {
 }
 
 .e-mail {
-  width: 16px;
-  height: 12px;
   fill: var(--main-text-cl);
   margin-right: 10px;
   display: flex;
@@ -143,8 +141,6 @@ img {
 }
 
 .phone {
-  width: 10px;
-  height: 16px;
   fill: var(--main-text-cl);
   margin-right: 10px;
   display: flex;
@@ -232,11 +228,6 @@ img {
 .advantage-card {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
-}
-
-.advantage-svg {
-  width: 70px;
-  height: 70px;
 }
 
 .adv-svg-tile {
@@ -336,8 +327,6 @@ img {
 
 .team-social {
   fill: #afb1b8;
-  width: 20px;
-  height: 20px;
 }
 
 .team-link {
@@ -384,8 +373,6 @@ img {
 }
 
 .client-svg {
-  width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 
@@ -465,8 +452,6 @@ img {
 
 .studio-social {
   fill: var(--alt-text-cl);
-  width: 20px;
-  height: 20px;
 }
 
 /*Portfolio*/
